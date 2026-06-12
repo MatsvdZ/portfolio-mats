@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mats van der Zwan — Portfolio</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+
+  <body>
+    <div class="scroll-progress"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home">Mats van der Zwan</a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <p class="label">CMD student at AUAS</p>
+          <h1>I build interactive websites with a bit of character.</h1>
+          <p>
+            Hey, I’m Mats. I like frontend, motion, games, motorcycles and
+            websites that feel a little less default. This portfolio is a
+            collection of things I made, tested, broke and improved.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button" href="#about">About me</a>
+          </div>
+        </div>
+
+        <aside class="profile-card">
+          <div class="polaroid-stack">
+            <div class="polaroid main-card">
+              <img src="images/profielfoto.jpeg" alt="Mats" />
+              <p>Mats</p>
+            </div>
+
+            <div class="polaroid card-motor">
+              <img src="images/motor.jpeg" />
+              <p>Weekend rides</p>
+            </div>
+
+            <div class="polaroid card-football">
+              <img src="images/football.jpeg" alt="Football" />
+              <p>Football</p>
+            </div>
+
+            <div class="polaroid card-golf">
+              <img src="images/golf.jpeg" alt="Golf" />
+              <p>Golf</p>
+            </div>
+          </div>
+
+          <div>
+            <h2>Mats</h2>
+            <p class="live-status" id="liveStatus">currently loading...</p>
+            <p>Frontend / interaction / visual experiments</p>
+          </div>
+
+          <ul class="quick-facts">
+            <li>📍 Amsterdam</li>
+            <li>🏍 Motorcycle rider</li>
+            <li>⚽ Football fan</li>
+            <li>🎮 Game-inspired interfaces</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="label">Selected work</p>
+          <h2>Recent Projects</h2>
+          <p>
+            A selection of projects where I experimented with interaction,
+            accessibility, creative coding, CSS, APIs and motion.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card large">
+            <div class="project-stack" data-project-stack>
+              <button
+                class="stack-button stack-prev"
+                type="button"
+                aria-label="Previous screenshot"
+              >
+                ←
+              </button>
+
+              <div class="stack-images">
+                <img
+                  class="active"
+                  src="images/hcd-1.png"
+                  alt="HCD video player screenshot 1"
+                />
+                <img
+                  src="images/hcd-2.png"
+                  alt="HCD video player screenshot 2"
+                />
+              </div>
+
+              <button
+                class="stack-button stack-next"
+                type="button"
+                aria-label="Next screenshot"
+              >
+                →
+              </button>
+
+              <div class="stack-dots" aria-hidden="true"></div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-number">01</span>
+              <span class="project-stamp">user tested</span>
+              <h3>HCD Video Experience</h3>
+              <p>
+                A video player made for a deaf user. I focused on making sound
+                more visible through subtitles, movement, colour and visual
+                feedback.
+              </p>
+
+              <div class="tags">
+                <span>Accessibility</span>
+                <span>User testing</span>
+                <span>Motion</span>
+              </div>
+
+              <p class="note">
+                Favourite part: turning sound into something visual instead of
+                only adding plain subtitles.
+              </p>
+
+              <a
+                href="https://matsvdz.github.io/Human-Centred-Design/"
+                target="_blank"
+              >
+                Live site
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-stack" data-project-stack>
+              <button
+                class="stack-button stack-prev"
+                type="button"
+                aria-label="Previous screenshot"
+              >
+                ←
+              </button>
+
+              <div class="stack-images">
+                <img
+                  class="active"
+                  src="images/api-1.png"
+                  alt="Solar system api screenshot 1"
+                />
+                <img
+                  src="images/api-2.png"
+                  alt="Solar system api screenshot 2"
+                />
+              </div>
+
+              <button
+                class="stack-button stack-next"
+                type="button"
+                aria-label="Next screenshot"
+              >
+                →
+              </button>
+
+              <div class="stack-dots" aria-hidden="true"></div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-number">02</span>
+              <span class="project-stamp">personal favourite</span>
+              <h3>Solar System API</h3>
+              <p>
+                A solar system built with real API data. I used canvas to
+                animate the planets and tried to make huge space numbers easier
+                to understand.
+              </p>
+
+              <div class="tags">
+                <span>Astro</span>
+                <span>Canvas</span>
+                <span>API</span>
+              </div>
+
+              <p class="note">
+                Biggest challenge: making real data feel understandable.
+              </p>
+
+              <a href="https://api-wdd.onrender.com/" target="_blank">
+                Live site
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-stack" data-project-stack>
+              <button
+                class="stack-button stack-prev"
+                type="button"
+                aria-label="Previous screenshot"
+              >
+                ←
+              </button>
+
+              <div class="stack-images">
+                <img
+                  class="active"
+                  src="images/css-1.png"
+                  alt="CSS screenshot 1"
+                />
+                <img src="images/css-2.png" alt="CSS screenshot 2" />
+              </div>
+
+              <button
+                class="stack-button stack-next"
+                type="button"
+                aria-label="Next screenshot"
+              >
+                →
+              </button>
+
+              <div class="stack-dots" aria-hidden="true"></div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-number">03</span>
+              <span class="project-stamp">CSS experiment</span>
+              <h3>CSS DJ Control Panel</h3>
+              <p>
+                A DJ panel built almost completely with CSS. Faders, switches,
+                soundwaves, modes and animations all working together.
+              </p>
+
+              <div class="tags">
+                <span>CSS</span>
+                <span>Creative coding</span>
+                <span>Animation</span>
+              </div>
+
+              <p class="note">
+                Favourite part: discovering how much interaction CSS can handle.
+              </p>
+
+              <a href="https://matsvdz.github.io/CSS-WDD/" target="_blank">
+                Live site
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card large">
+            <div class="project-stack" data-project-stack>
+              <button
+                class="stack-button stack-prev"
+                type="button"
+                aria-label="Previous screenshot"
+              >
+                ←
+              </button>
+
+              <div class="stack-images">
+                <img
+                  class="active"
+                  src="images/nebula-1.png"
+                  alt="HCD video player screenshot 1"
+                />
+                <img
+                  src="images/nebula-2.png"
+                  alt="HCD video player screenshot 2"
+                />
+                <img
+                  src="images/nebula-3.png"
+                  alt="HCD video player screenshot 3"
+                />
+              </div>
+
+              <button
+                class="stack-button stack-next"
+                type="button"
+                aria-label="Next screenshot"
+              >
+                →
+              </button>
+
+              <div class="stack-dots" aria-hidden="true"></div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-number">04</span>
+              <span class="project-stamp">4 day build</span>
+              <h3>NEBULA Xplorer</h3>
+              <p>
+                A hackathon website for SRON. I worked on the custom cursor,
+                scroll progress, footer, text animation and the black hole
+                transition.
+              </p>
+
+              <div class="tags">
+                <span>Hackathon</span>
+                <span>Teamwork</span>
+                <span>Interaction</span>
+              </div>
+
+              <p class="note">
+                Built in 4 days, so this was mostly about speed, decisions and
+                making things fit together.
+              </p>
+
+              <a
+                href="https://alishasoedamah.github.io/hackaton/"
+                target="_blank"
+              >
+                Live site
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-stack" data-project-stack>
+              <button
+                class="stack-button stack-prev"
+                type="button"
+                aria-label="Previous screenshot"
+              >
+                ←
+              </button>
+
+              <div class="stack-images">
+                <img
+                  class="active"
+                  src="images/bt-1.png"
+                  alt="Browser Technologies screenshot 1"
+                />
+                <img
+                  src="images/bt-2.png"
+                  alt="Browser Technologies screenshot 2"
+                />
+              </div>
+
+              <button
+                class="stack-button stack-next"
+                type="button"
+                aria-label="Next screenshot"
+              >
+                →
+              </button>
+
+              <div class="stack-dots" aria-hidden="true"></div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-number">05</span>
+              <h3>Browser Tech Form</h3>
+              <p>
+                A complex form with semantic HTML, validation, progressive
+                enhancement and clear feedback for users in the NS style.
+              </p>
+
+              <div class="tags">
+                <span>Forms</span>
+                <span>Validation</span>
+                <span>HTML</span>
+              </div>
+
+              <p class="note">
+                Learned that forms are way harder than they look.
+              </p>
+
+              <a href="https://matsvdz.github.io/Browser-Tech/" target="_blank">
+                Live site
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-stack" data-project-stack>
+              <button
+                class="stack-button stack-prev"
+                type="button"
+                aria-label="Previous screenshot"
+              >
+                ←
+              </button>
+
+              <!-- <div class="stack-images">
+                <img
+                  class="active"
+                  src="images/meesterproef-1.png"
+                  alt="Meesterproef screenshot 1"
+                />
+                <img
+                  src="images/meesterproef-2.png"
+                  alt="Meesterproef screenshot 2"
+                />
+                <img
+                  src="images/meesterproef-3.png"
+                  alt="Meesterproef screenshot 3"
+                />
+              </div> -->
+
+              <button
+                class="stack-button stack-next"
+                type="button"
+                aria-label="Next screenshot"
+              >
+                →
+              </button>
+
+              <div class="stack-dots" aria-hidden="true"></div>
+            </div>
+
+            <div class="project-content">
+              <span class="project-number">06</span>
+              <span class="project-stamp">work in progress</span>
+              <h3>Meesterproef</h3>
+              <p>
+                My final project, where concept, design, frontend and
+                collaboration come together.
+              </p>
+
+              <div class="tags">
+                <span>Final project</span>
+                <span>UX</span>
+                <span>Frontend</span>
+              </div>
+
+              <p class="note">Currently in progress.</p>
+
+              <a href="#contact">Coming soon</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section learning-section">
+        <div class="section-heading">
+          <p class="label">Currently Learning</p>
+          <h2>learning_queue.exe</h2>
+        </div>
+
+        <div class="learning-terminal">
+          <div class="terminal-header">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="terminal-body">
+            <p>> opening learning_queue...</p>
+
+            <br />
+
+            <p class="complete">✓ Creative CSS</p>
+            <p class="complete">✓ Accessibility</p>
+            <p class="complete">✓ Interaction Design</p>
+
+            <br />
+
+            <p class="downloading">⬇ Learning how to use AI</p>
+
+            <p class="downloading">⬇ View Transitions API</p>
+
+            <p class="downloading">⬇ Advanced Motion Design</p>
+
+            <p class="downloading">⬇ Real Client Projects</p>
+
+            <p class="downloading">⬇ Internship Experience</p>
+
+            <br />
+
+            <p class="terminal-prompt">
+              > status:
+              <span class="typing-status"></span>
+              <span class="cursor"></span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div>
+          <p class="label">About me</p>
+          <h2>Get to know me</h2>
+        </div>
+
+        <div class="about-grid">
+          <article>
+            <h3>Who am I?</h3>
+            <p>
+              I am a CMD student who enjoys building interfaces that not only
+              work, but also feel nice to use. I like small details, animation,
+              visual ideas and projects with a strong atmosphere.
+            </p>
+            <p>
+              Outside of my work I like riding my motorcycle, playing football,
+              playing golf and occasionally spending too much time on tiny
+              design details nobody asked for.
+            </p>
+          </article>
+
+          <article class="terminal-card">
+            <div class="terminal-header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="terminal-body">
+              <p>> whoami</p>
+              <p class="answer">Mats van der Zwan</p>
+
+              <p>> current_status</p>
+              <p class="answer">Building weird frontend stuff</p>
+
+              <p>> interests</p>
+              <p class="answer">
+                motorcycles<br />
+                football<br />
+                creative coding<br />
+                animation<br />
+                interaction design
+              </p>
+
+              <p>> current_goal</p>
+              <p class="answer">
+                <span class="typing"></span>
+                <span class="cursor"></span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <div class="section-heading">
+          <p class="label">How I work</p>
+          <h2>Process</h2>
+        </div>
+
+        <div class="process-list">
+          <article>
+            <span>01</span>
+            <h3>Concept first</h3>
+            <p>
+              I start by figuring out what the project should feel like. A good
+              idea makes the design and code decisions easier.
+            </p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h3>Build quickly</h3>
+            <p>
+              I like getting something on screen fast. It helps me see what
+              works and what is only nice in my head.
+            </p>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h3>Test and adjust</h3>
+            <p>
+              I test, ask feedback and change things when the idea does not work
+              as well as expected.
+            </p>
+          </article>
+
+          <article>
+            <span>04</span>
+            <h3>Polish the details</h3>
+            <p>
+              Motion, states, responsiveness, accessibility and the small things
+              that make the project feel finished.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="timeline">
+        <div class="section-heading">
+          <p class="label">Experience</p>
+          <h2>My Journey So Far</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-year">2023</span>
+            <div class="timeline-content">
+              <h3>Started CMD at AUAS</h3>
+              <p>
+                Learned the fundamentals of UX, design and frontend development.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-year">2025</span>
+            <div class="timeline-content">
+              <h3>Hackathon</h3>
+              <p>
+                Built a complete space-themed experience in 4 days together with
+                a multidisciplinary team.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-year">2026</span>
+            <div class="timeline-content">
+              <h3>Web Design and Development Minor</h3>
+              <p>
+                Focused on accessibility, interaction, creative coding and
+                modern web technologies.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-year">Now</span>
+            <div class="timeline-content">
+              <h3>Looking for an internship</h3>
+              <p>
+                Searching for a place where I can combine frontend, interaction
+                and visual design.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <p class="label">Contact</p>
+        <h2>Want to build something together?</h2>
+        <p>
+          Looking for someone who likes frontend, interaction and visual energy?
+          Send me a message or check out my work.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:matsmvdzwan@gmail.com">E-mail me</a>
+          <a href="https://github.com/MatsvdZ" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/matsvanderzwan/" target="_blank">
+            LinkedIn
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © 2026 Mats van der Zwan — Built with HTML, CSS, JavaScript and a little
+        bit of love. ❤️
+      </p>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
